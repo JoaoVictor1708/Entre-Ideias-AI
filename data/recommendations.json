@@ -1,0 +1,31 @@
+{
+  "resources": [
+    {
+      "id": "manual-mundo", "category": "CANAL · VÍDEO", "title": "Manual do Mundo", "description": "Experimentos, curiosidades e explicações que convidam a observar e testar ideias.", "why": "Bom ponto de partida para quem aprende vendo fenômenos ganharem forma.", "level": "Todos os níveis", "url": "https://www.youtube.com/@manualdomundo", "profiles": ["visual", "pratico", "explorador"], "topics": ["ciencia", "criatividade", "tecnologia"]
+    },
+    {
+      "id": "curso-em-video", "category": "CANAL · VÍDEO", "title": "Curso em Vídeo", "description": "Cursos gratuitos em vídeo, com aulas organizadas para aprender programação passo a passo.", "why": "Une explicação visual a uma sequência clara para praticar junto.", "level": "Iniciante", "url": "https://www.youtube.com/@CursoemVideo", "profiles": ["visual", "leitor", "pratico"], "topics": ["programacao", "tecnologia"]
+    },
+    {
+      "id": "mdn", "category": "DOCUMENTAÇÃO", "title": "Aprendendo desenvolvimento web · MDN", "description": "Trilha estruturada para começar com HTML, CSS e JavaScript, com explicações e desafios.", "why": "Uma referência confiável para aprender lendo e construir algo por etapas.", "level": "Iniciante", "url": "https://developer.mozilla.org/pt-BR/docs/Learn_web_development", "profiles": ["leitor", "resolvedor", "explorador"], "topics": ["programacao", "tecnologia", "criatividade"]
+    },
+    {
+      "id": "khan", "category": "PLATAFORMA · EXERCÍCIOS", "title": "Khan Academy Brasil", "description": "Aulas e exercícios de matemática, ciências e língua portuguesa para estudar no próprio ritmo.", "why": "Você pode alternar entre explicação, prática e revisão conforme precisar.", "level": "Vários níveis", "url": "https://pt.khanacademy.org/brasil", "profiles": ["resolvedor", "visual", "leitor", "multimodal"], "topics": ["matematica", "ciencia"]
+    },
+    {
+      "id": "scratch", "category": "PROJETO · MÃO NA MASSA", "title": "Scratch", "description": "Crie histórias, animações e jogos com programação em blocos e compartilhe seus projetos.", "why": "Transforma conceitos em uma criação que você pode testar e modificar.", "level": "Iniciante", "url": "https://scratch.mit.edu/", "profiles": ["pratico", "explorador", "multimodal"], "topics": ["programacao", "tecnologia", "criatividade"]
+    },
+    {
+      "id": "teded", "category": "VÍDEO · IDEIAS", "title": "TED-Ed", "description": "Lições curtas em vídeo que partem de perguntas sobre ciência, história, cultura e pensamento.", "why": "Ajuda a abrir novas perguntas e conectar temas diferentes.", "level": "Todos os níveis", "url": "https://ed.ted.com/", "profiles": ["visual", "explorador", "multimodal"], "topics": ["ciencia", "historia", "criatividade", "comunicacao"]
+    },
+    {
+      "id": "obmep", "category": "DESAFIOS · MATEMÁTICA", "title": "Banco de Questões OBMEP", "description": "Problemas e provas anteriores para explorar estratégias e desenvolver raciocínio matemático.", "why": "Combina com quem aprende enfrentando um desafio e comparando caminhos de solução.", "level": "Vários níveis", "url": "https://www.obmep.org.br/banco.htm", "profiles": ["resolvedor", "explorador"], "topics": ["matematica"]
+    },
+    {
+      "id": "geogebra", "category": "FERRAMENTA INTERATIVA", "title": "GeoGebra", "description": "Explore matemática com recursos interativos de geometria, álgebra, gráficos e estatística.", "why": "Permite experimentar visualmente e ajustar variáveis para entender relações.", "level": "Vários níveis", "url": "https://www.geogebra.org/?lang=pt", "profiles": ["visual", "pratico", "resolvedor"], "topics": ["matematica", "ciencia"]
+    },
+    {
+      "id": "wikimedia", "category": "LIVRO · LEITURA", "title": "O mundo assombrado pelos demônios", "description": "Carl Sagan apresenta ferramentas para pensar criticamente sobre alegações e evidências.", "why": "Uma leitura para cultivar curiosidade e perguntar como sabemos se uma ideia é confiável.", "level": "Leitura mediada", "url": "https://www.companhiadasletras.com.br/livro/9788535908343/o-mundo-assombrado-pelos-demonios", "profiles": ["leitor", "explorador", "resolvedor"], "topics": ["ciencia", "criatividade"]
+    }
+  ]
+}

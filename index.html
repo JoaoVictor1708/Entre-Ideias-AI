@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10251f">
+  <meta name="description" content="Uma experiência interativa sobre inteligência artificial, criatividade e autonomia.">
+  <title>Entre Ideias — IA, criatividade e autonomia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="module" src="js/app.js"></script>
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Entre Ideias, início"><span class="brand-mark">ei<span>·</span></span><span>ENTRE IDEIAS</span></a>
+    <nav aria-label="Navegação principal">
+      <button class="nav-link" data-go="pesquisa">A pesquisa</button>
+      <button class="nav-link" data-go="inicio">O projeto</button>
+      <button class="nav-link" data-action="open-learning" aria-label="Descubra seu perfil de aprendizagem">Seu perfil</button>
+    </nav>
+    <span class="edition">PROJETO ESCOLAR <i></i> 2026</span>
+  </header>
+
+  <main id="main-content">
+    <section class="screen active" id="screen-home" data-screen="inicio" aria-labelledby="hero-title">
+      <div class="hero-wrap">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> UMA EXPERIÊNCIA SOBRE ESCOLHAS</p>
+          <h1 id="hero-title">A IA pensa<br>por você — ou<br><em>com você?</em></h1>
+          <p class="hero-lede">A tecnologia pode expandir o que somos capazes de imaginar. A diferença está em quem continua no comando das ideias.</p>
+          <div class="hero-actions"><button class="button button-acid" data-action="start">Começar experiência <span aria-hidden="true">↗</span></button><button class="text-button" data-go="pesquisa">Conheça a pesquisa <span aria-hidden="true">↓</span></button></div>
+          <div class="hero-foot"><span class="tiny-dot"></span> QUIZ · JOGO · DESCOBERTAS</div>
+        </div>
+        <div class="hero-art" aria-label="Ilustração abstrata de uma mente humana conectada a uma inteligência artificial" role="img">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="orb orb-main"><div class="orb-core"></div><span class="orb-label">IDEIAS<br>EM MOVIMENTO</span></div>
+          <div class="pixel pixel-a"></div><div class="pixel pixel-b"></div><div class="pixel pixel-c"></div>
+          <div class="art-caption"><span>01 / 03</span><span>HUMANO + TECNOLOGIA</span></div>
+          <div class="art-note">A curiosidade<br>é o começo.</div>
+        </div>
+      </div>
+      <div class="home-bottom"><p>UM PROJETO DE INOVAÇÃO E DESENVOLVIMENTO</p><p>Use. Questione. Crie. <span>✳</span></p></div>
+    </section>
+
+    <section class="screen" id="screen-research" data-screen="pesquisa" aria-labelledby="research-title">
+      <div class="section-head"><p class="eyebrow"><span class="eyebrow-line"></span> PONTO DE PARTIDA</p><span class="step-count">01 — A PESQUISA</span></div>
+      <div class="research-intro"><div><h2 id="research-title">Antes de começar,<br><em>olhe ao redor.</em></h2><p class="body-large">Esta experiência nasceu de uma pergunta feita aos estudantes da nossa escola: como a inteligência artificial está mudando o jeito de aprender e criar?</p></div><div class="research-stamp">DADOS<br><strong>DA ESCOLA</strong><br><span>RESULTADOS INFORMADOS</span></div></div>
+      <div class="research-grid" id="research-insights" aria-live="polite"></div>
+      <div class="research-note"><span class="note-icon">i</span><p><strong>Aviso:</strong> esta é uma experiência educativa, não um diagnóstico médico ou psicológico nem uma avaliação científica. Os resultados são apenas indicadores das respostas e escolhas feitas neste site; não definem sua criatividade ou dependência.</p></div>
+      <div class="section-actions"><button class="button button-ghost" data-go="inicio">← Voltar</button><button class="button button-acid" data-action="start-quiz">Continuar para o quiz <span>↗</span></button></div>
+      <details class="research-details"><summary>Ver painel de dados da pesquisa</summary><div id="research-dashboard" class="dashboard-grid"></div></details>
+    </section>
+
+    <section class="screen" id="screen-quiz" data-screen="quiz" aria-labelledby="quiz-title">
+      <div class="section-head"><p class="eyebrow"><span class="eyebrow-line"></span> SEU PONTO DE PARTIDA</p><span class="step-count" id="quiz-step">01 / 12</span></div>
+      <div class="progress-track" aria-label="Progresso do quiz"><span id="quiz-progress"></span></div>
+      <div class="quiz-layout"><div class="quiz-aside"><span class="chapter-no" id="quiz-number">01</span><p>Não existe resposta certa. Pense no que você costuma fazer de verdade.</p><span class="aside-tag">CRIATIVIDADE <b>+</b> AUTONOMIA</span></div><div class="quiz-main"><h2 id="quiz-title">Como você costuma<br>começar uma ideia?</h2><p class="question-hint" id="quiz-hint">Escolha a opção mais próxima da sua rotina.</p><div class="answer-list" id="quiz-answers" role="group" aria-labelledby="quiz-title"></div><div class="quiz-controls"><button class="text-button" id="quiz-back" data-action="quiz-back">← Anterior</button><span id="quiz-feedback" aria-live="polite"></span><button class="button button-dark" id="quiz-next" data-action="quiz-next" disabled>Próxima <span>→</span></button></div></div></div>
+    </section>
+
+    <section class="screen" id="screen-quiz-result" data-screen="quiz-result" aria-labelledby="quiz-result-title">
+      <div class="section-head"><p class="eyebrow"><span class="eyebrow-line"></span> SEU RETRATO DE AGORA</p><span class="step-count">02 — LEITURA</span></div>
+      <div class="result-top"><div><h2 id="quiz-result-title">Ideias em<br><em>perspectiva.</em></h2><p class="body-large" id="quiz-interpretation"></p></div><div class="result-stamp">NÃO É<br><strong>DIAGNÓSTICO</strong><br><span>É UM RETRATO DO QUIZ</span></div></div>
+      <div class="score-grid" id="quiz-scores"></div>
+      <div class="section-actions"><button class="button button-ghost" data-go="quiz">← Rever quiz</button><button class="button button-acid" data-action="start-game">Viver uma jornada <span>↗</span></button></div>
+      <div class="export-row"><button class="text-button export-button" data-action="export-quiz">Salvar resultado do quiz em PDF ↓</button><span>Na janela de impressão, escolha “Salvar como PDF”.</span></div>
+    </section>
+
+    <section class="screen game-screen" id="screen-game" data-screen="jogo" aria-labelledby="game-title">
+      <div class="game-header"><div><p class="eyebrow"><span class="eyebrow-line"></span> UMA VIDA DE ESCOLHAS</p><h2 id="game-title">O caminho <em>se faz pensando.</em></h2></div><button class="text-button" data-action="leave-game">Sair do jogo ×</button></div>
+      <div class="game-meta"><div><span class="meta-label">IDADE</span><strong id="game-age">08 <small>ANOS</small></strong><span class="life-stage" id="game-stage">INFÂNCIA</span></div><div class="life-progress"><div class="life-progress-head"><span>TEMPO DE VIDA</span><span id="game-time-label">01 / 08</span></div><div class="progress-track"><span id="game-progress"></span></div></div><div class="game-hint"><span class="tiny-dot"></span> SUA HISTÓRIA, SUAS ESCOLHAS</div></div>
+      <div class="game-board"><canvas id="game-canvas" width="900" height="300" aria-label="Jogo de caminhada em pixel art. Um personagem envelhece conforme avança pela paisagem."></canvas><div class="canvas-overlay" aria-hidden="true"><span>ENTRE IDEIAS</span><span id="canvas-caption">UM CAMINHO COMEÇA</span></div></div>
+      <div class="game-lower"><div class="meters" id="game-meters" aria-label="Indicadores da jornada"></div><div class="event-card" id="game-event" aria-live="polite"></div></div>
+    </section>
+
+    <section class="screen" id="screen-game-result" data-screen="game-result" aria-labelledby="game-result-title">
+      <div class="section-head"><p class="eyebrow"><span class="eyebrow-line"></span> FIM DE UMA JORNADA, COMEÇO DE OUTRA</p><span class="step-count">03 — REFLEXÃO</span></div>
+      <div class="result-top"><div><h2 id="game-result-title">O caminho<br><em>que você criou.</em></h2><p class="body-large" id="game-interpretation"></p></div><div class="result-stamp">INDICADORES<br><strong>DO JOGO</strong><br><span>ESCOLHAS, NÃO RÓTULOS</span></div></div>
+      <div class="score-grid" id="game-result-scores"></div>
+      <div class="journey-reflection"><span class="note-icon">✳</span><p id="journey-research-copy"></p></div>
+      <blockquote>“A IA pode ser sua aliada.<br><em>A decisão de continuar pensando é sua.</em>”</blockquote>
+      <div class="section-actions"><button class="button button-ghost" data-action="restart-game">Jogar novamente</button><button class="button button-acid" data-action="start-learning">Descobrir como você aprende <span>↗</span></button></div>
+      <div class="export-row"><button class="text-button export-button" data-action="export-game">Salvar jornada em PDF ↓</button><span>Na janela de impressão, escolha “Salvar como PDF”.</span></div>
+    </section>
+
+    <section class="screen" id="screen-learning" data-screen="aprendizagem" aria-labelledby="learning-title">
+      <div class="section-head"><p class="eyebrow"><span class="eyebrow-line"></span> UM MAPA PARA CONTINUAR</p><span class="step-count" id="learning-step">01 / 09</span></div>
+      <div class="progress-track"><span id="learning-progress"></span></div>
+      <div class="quiz-layout learning-layout"><div class="quiz-aside"><span class="chapter-no">✳</span><p>Preferências não são caixas fixas. São pistas para experimentar outros caminhos.</p><span class="aside-tag">APRENDER <b>+</b> EXPLORAR</span></div><div class="quiz-main"><h2 id="learning-title">Quando você aprende<br>algo novo, prefere...</h2><p class="question-hint" id="learning-hint"></p><div class="answer-list" id="learning-answers" role="group" aria-labelledby="learning-title"></div><div class="quiz-controls"><button class="text-button" data-action="learning-back" id="learning-back">← Anterior</button><span id="learning-feedback" aria-live="polite"></span><button class="button button-dark" data-action="learning-next" id="learning-next" disabled>Próxima <span>→</span></button></div></div></div>
+    </section>
+
+    <section class="screen" id="screen-recommendations" data-screen="recomendacoes" aria-labelledby="recommendation-title">
+      <div class="section-head"><p class="eyebrow"><span class="eyebrow-line"></span> IDEIAS PARA O PRÓXIMO PASSO</p><span class="step-count">04 — SEU MAPA</span></div>
+      <div class="result-top"><div><h2 id="recommendation-title">Seu jeito de<br><em>aprender abre portas.</em></h2><p class="body-large" id="learning-interpretation"></p></div><div class="profile-badge"><span>SEU PERFIL</span><strong id="learning-profile">EXPLORADOR</strong><i>✳</i></div></div>
+      <div class="interest-row" id="interest-tags"></div>
+      <h3 class="subsection-title">Uma pequena curadoria para começar</h3>
+      <div class="recommendation-grid" id="recommendation-cards"></div>
+      <div class="section-actions"><button class="button button-ghost" data-go="aprendizagem">← Rever perfil</button><button class="button button-acid" id="learning-next-step" data-action="finish">Finalizar experiência <span>↗</span></button></div>
+      <div class="export-row"><button class="text-button export-button" data-action="export-learning">Salvar perfil e recomendações em PDF ↓</button><span>Na janela de impressão, escolha “Salvar como PDF”.</span></div>
+    </section>
+
+    <section class="screen" id="screen-finish" data-screen="final" aria-labelledby="finish-title">
+      <div class="finish-mark">ei<span>·</span></div><p class="eyebrow"><span class="eyebrow-line"></span> VOCÊ CHEGOU AO FIM (E ISSO É UM COMEÇO)</p>
+      <h2 id="finish-title">Não precisamos escolher<br>entre pensar e usar tecnologia.<br><em>Precisamos fazer os dois.</em></h2>
+      <p class="finish-copy">A pesquisa nos ajuda a enxergar como a IA já faz parte da escola. Sua jornada mostrou como pequenas escolhas constroem uma relação com a tecnologia. Que tal levar essa pergunta para a próxima ideia que você tiver?</p>
+      <div class="finish-actions"><button class="button button-acid" data-action="restart">Recomeçar experiência <span>↻</span></button><button class="text-button" data-go="pesquisa">Voltar aos dados da pesquisa <span>↗</span></button></div>
+      <footer class="finish-footer"><span>ENTRE IDEIAS · PROJETO DE INOVAÇÃO E DESENVOLVIMENTO</span><span>FEITO PARA PENSAR JUNTO ✳</span></footer>
+    </section>
+  </main>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

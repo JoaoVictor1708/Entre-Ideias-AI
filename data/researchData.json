@@ -1,0 +1,53 @@
+{
+  "participants": null,
+  "participantsLabel": "[DADO DA PESQUISA A INSERIR]",
+  "questions": [
+    {
+      "id": "study-use",
+      "question": "Você utiliza IA para trabalhos escolares?",
+      "chartTitle": "IA nos estudos",
+      "interpretation": "7 em cada 10 adolescentes entrevistados afirmam utilizar IA para trabalhos escolares.",
+      "base": "Base: todos os adolescentes entrevistados.",
+      "responses": [{ "option": "Utilizam IA para trabalhos escolares", "count": null, "percentage": 70 }]
+    },
+    {
+      "id": "ready-answers",
+      "question": "Entre os adolescentes que usam IA para estudar, para que a utilizam?",
+      "chartTitle": "Respostas prontas",
+      "interpretation": "Entre os adolescentes que usam IA para estudar, 63% dizem utilizá-la para obter respostas para suas atividades.",
+      "base": "Base: adolescentes entrevistados que usam IA para estudar.",
+      "responses": [{ "option": "Usam IA para obter respostas de atividades", "count": null, "percentage": 63 }]
+    },
+    {
+      "id": "fewer-ideas",
+      "question": "Como o uso de IA afeta a geração de ideias próprias?",
+      "chartTitle": "Menos ideias próprias",
+      "interpretation": "Entre os adolescentes que usam IA, 38% dizem que o uso faz com que gerem menos ideias por conta própria.",
+      "base": "Base: adolescentes entrevistados que usam IA.",
+      "responses": [{ "option": "Dizem gerar menos ideias por conta própria", "count": null, "percentage": 38 }]
+    },
+    {
+      "id": "comprehension",
+      "question": "A IA ajuda a compreender conteúdos escolares?",
+      "chartTitle": "IA como ferramenta de aprendizagem",
+      "interpretation": "Entre os adolescentes que usam IA, 66% dizem que ela os ajuda a compreender melhor os conteúdos escolares, não apenas a terminar tarefas mais rápido.",
+      "base": "Base: adolescentes entrevistados que usam IA.",
+      "responses": [{ "option": "Dizem que a IA ajuda a compreender conteúdos", "count": null, "percentage": 66 }]
+    },
+    {
+      "id": "critical-thinking",
+      "question": "Quais habilidades são importantes para o futuro?",
+      "chartTitle": "Pensamento crítico importa",
+      "interpretation": "Metade dos adolescentes apontou checagem de fatos e pensamento crítico entre as habilidades mais importantes para o futuro.",
+      "base": "Base: adolescentes entrevistados.",
+      "responses": [{ "option": "Apontaram checagem de fatos e pensamento crítico", "count": null, "percentage": 50 }]
+    }
+  ],
+  "insights": [
+    { "id": "study-use", "title": "IA nos estudos", "value": 70, "description": "dos adolescentes entrevistados afirmam utilizar IA para trabalhos escolares.", "base": "Todos os adolescentes entrevistados" },
+    { "id": "ready-answers", "title": "Respostas prontas", "value": 63, "description": "dos adolescentes que usam IA para estudar dizem utilizá-la para obter respostas para suas atividades.", "base": "Adolescentes que usam IA para estudar" },
+    { "id": "fewer-ideas", "title": "Menos ideias próprias", "value": 38, "description": "dos adolescentes que usam IA dizem que ela faz com que gerem menos ideias por conta própria.", "base": "Adolescentes que usam IA" },
+    { "id": "comprehension", "title": "IA como ferramenta", "value": 66, "description": "dos adolescentes que usam IA dizem que ela os ajuda a compreender melhor os conteúdos escolares.", "base": "Adolescentes que usam IA" },
+    { "id": "critical-thinking", "title": "Pensamento crítico importa", "value": 50, "description": "dos adolescentes apontaram checagem de fatos e pensamento crítico entre as habilidades mais importantes para o futuro.", "base": "Adolescentes entrevistados" }
+  ]
+}
